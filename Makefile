@@ -6,55 +6,10 @@
 #    By: sprodatu <sprodatu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/29 09:10:09 by sprodatu          #+#    #+#              #
-<<<<<<< HEAD
 #    Updated: 2024/04/19 09:03:02 by sprodatu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# NAME = fractol
-
-# cc = cc
-
-# CFLAGS = -Wall -Wextra -Werror -lglfw -L"/Users/sprodatu/.brew/opt/glfw/lib/" -framework Cocoa -framework OpenGL -framework IOKit
-
-# SRC = fractol.c drawing.c decimals.c ft_putstr.c
-
-# SRCDIR = .
-
-# OBJDIR = obj
-
-# OBJ = $(addprefix $(OBJDIR)/, $(SRC:.c=.o))
-
-# all : $(NAME)
-
-# $(NAME) : $(OBJ)
-# 	@$(cc) $(CFLAGS) -o $(NAME) $(OBJ)
-# $(OBJDIR)/%.o : $(SRCDIR)/%.c | $(OBJDIR)
-# 	@$(cc) $(CFLAGS) -c $< -o $@
-
-# $(OBJDIR) :
-# 	@mkdir -p $(OBJDIR)
-
-# clean :
-# 	@rm -rf $(OBJDIR)
-
-# fclean : clean
-# 	@rm -f $(NAME)
-
-# re : clean fclean all
-
-# .PHONY : all clean fclean re
-
-# LDFLAGS := -lglfw -L"/Users/sprodatu/.brew/opt/glfw/lib/" -framework Cocoa -framework OpenGL -framework IOKit #-fsanitize=address -g 
-
-
-
-=======
-#    Updated: 2024/05/03 02:15:11 by sprodatu         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
->>>>>>> master
 CC := cc
 
 CFLAGS := -Wall -Wextra -Werror
@@ -98,16 +53,12 @@ $(OBJDIR):
 bonus: all
 
 libmlx:
-	rm -rf MLX42
 	git clone https://github.com/codam-coding-college/MLX42.git
 	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4
 
 clean:
 	rm -rf $(OBJDIR)
-<<<<<<< HEAD
 	rm -rf MLX42
-=======
->>>>>>> master
 
 fclean: clean
 	rm -f $(TARGET)
