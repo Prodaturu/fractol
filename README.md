@@ -18,7 +18,6 @@
   <p>
     <img src="https://img.shields.io/badge/score-125%20%2F%20100-success?style=for-the-badge" />
     <img src="https://img.shields.io/github/repo-size/Prodaturu/fractol?style=for-the-badge&logo=github">
-    <img src="https://img.shields.io/github/languages/count/Prodaturu/fractol?style=for-the-badge&logo=" />
     <img src="https://img.shields.io/github/languages/top/Prodaturu/fractol?style=for-the-badge" />
     <img src="https://img.shields.io/github/last-commit/Prodaturu/fractol?style=for-the-badge" />
   </p>
@@ -40,9 +39,10 @@
 
 ## 📜 About Project
 
-> One of the first graphical projects at 42 School, fract-ol generates beautiful fractals from the complex numbers of \
-> an iterative mathematical construct. A fractal is a fragmented geometrical figure that infinitely repeats itself at smaller scales. 
-> This project uses the school's graphical library, MLX42.
+> One of the graphical projects at 42 School. \
+> fract-ol generates beautiful fractals from complex numbers with the use an iterative mathematical construct. \
+> A fractal is a fragmented geometrical figure that infinitely repeats itself at smaller scales. \
+> This project uses the graphical library, MLX42 to produce images.
 
 For detailed information, refer to the [**subject of this project**](readme_files/fractol_subject.pdf).
 
@@ -51,7 +51,7 @@ For detailed information, refer to the [**subject of this project**](readme_file
 
 
 > [!NOTE]  
-> Because of 42 School norm requirements:
+> 42 School norm requirements:
 > * Each function can't have more than 25 lines of code.
 > * All variables are declared and aligned at the top of each function.
 > * Project should be created just with allowed functions otherwise it's cheating.
@@ -135,3 +135,7 @@ The program follows the logic below:
 ### Else
 
 Print an error message and return `EXIT_FAILURE` (i.e., 1)
+
+## License
+
+This project is licensed under the terms of the MIT license.
