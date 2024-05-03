@@ -1,5 +1,13 @@
 # Fractol-42
+<a name="readme-top"></a>
+<div align="center">
+  <!-- Logo -->
+  <a href="https://github.com/dpetrosy/42-Fractol">
+  <img src="README_files/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
+  <!-- Project Name -->
+  <h1>Fractol Project</h1>
 Draw fractals using MLX library in C
 
 ## Installation
