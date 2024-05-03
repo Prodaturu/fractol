@@ -2,7 +2,7 @@
 <div align="center">
   <!-- Logo -->
   <a href="https://github.com/Prodaturu/fractol">
-  <img src="README_files/logo.png" alt="Logo" width="90" height="90">
+  <img src="readme_files/logo.png" alt="Logo" width="90" height="90">
   </a>
 
   <!-- Project Name -->
