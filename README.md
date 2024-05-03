@@ -4,17 +4,25 @@ Draw fractals using MLX library in C
 
 ## Installation
 
-```bash
 # Clone the repo
+```bash
 git clone https://github.com/Prodaturu/fractol/ fractol_saikiran
+```
 
 # Navigate into the directory
+```bash
 cd fractol_saikiran
+```
 
 # Draw fractol
 
+```bash
 1. `./fractol m` for mandelbrot
+```
+```bash
 2. `./fractol b` for burning ship
+```
+```bash
 3. `./fractaol j real_val Imagnary_val` for julia
 ```
 
