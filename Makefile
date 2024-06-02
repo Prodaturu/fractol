@@ -6,7 +6,7 @@
 #    By: sprodatu <sprodatu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/29 09:10:09 by sprodatu          #+#    #+#              #
-#    Updated: 2024/04/19 09:03:02 by sprodatu         ###   ########.fr        #
+#    Updated: 2024/06/02 15:03:33 by sprodatu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,12 +53,13 @@ $(OBJDIR):
 bonus: all
 
 libmlx:
-	git clone https://github.com/codam-coding-college/MLX42.git
-	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4
+	if [ ! -d "$(LIBMLX)" ]; then \
+		git clone https://github.com/codam-coding-college/MLX42.git; \
+    fi
+		@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4
 
 clean:
 	rm -rf $(OBJDIR)
-	rm -rf MLX42
 
 fclean: clean
 	rm -f $(TARGET)

@@ -6,26 +6,12 @@
 /*   By: sprodatu <sprodatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 08:56:30 by sprodatu          #+#    #+#             */
-<<<<<<< HEAD
 /*   Updated: 2024/04/19 13:20:42 by sprodatu         ###   ########.fr       */
-=======
-/*   Updated: 2024/05/03 02:06:33 by sprodatu         ###   ########.fr       */
->>>>>>> master
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./includes/fractol.h"
 
-<<<<<<< HEAD
-=======
-// Bonus fractal: Burning Ship
-// The Burning Ship fractal is a variation of the Mandelbrot set, where the
-// real and imaginary parts of the complex number are squared and then added	
-// to the original complex number. The difference is that the absolute value
-// of the imaginary part is taken before squaring it. This results in a fractal
-// that looks like a ship on fire, hence the name.
-
->>>>>>> master
 void	mandel_is_hooked(void *mlx, t_fractal *f)
 {
 	f->xmin = -2.0;
@@ -97,7 +83,4 @@ void	giyi_burning_ship(void *param)
 		f->giyali = 0;
 	}
 }
-<<<<<<< HEAD
 				// f->clr = (0x000000 - 0xFFFFFF) * f->itr / MI + 0xFFFFFF;
-=======
->>>>>>> master

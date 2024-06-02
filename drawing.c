@@ -6,17 +6,12 @@
 /*   By: sprodatu <sprodatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/01 21:22:23 by sprodatu          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/04/19 08:57:51 by sprodatu         ###   ########.fr       */
-=======
-/*   Updated: 2024/05/03 01:45:16 by sprodatu         ###   ########.fr       */
->>>>>>> master
+/*   Updated: 2024/04/19 13:46:29 by sprodatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./includes/fractol.h"
 
-<<<<<<< HEAD
 // void	mandel_vals(t_fractal *f)
 // {
 // 	f->zim = 2 * f->zre * f->zim + f->cim;
@@ -25,8 +20,6 @@
 // 	f->itr++;
 // }
 
-=======
->>>>>>> master
 void	mandel_vals(t_fractal *f)
 {
 	double	temp;
@@ -95,10 +88,6 @@ void	giyi_mandel(void *param)
 				while (f->itr < MI && (f->zre * f->zre + f->zim * f->zim) <= 4)
 					mandel_vals(f);
 				f->clr = pixel_clr(f->itr);
-<<<<<<< HEAD
-				f->clr = (0x000000 - 0xFFFFFF) * f->itr / MI + 0xFFFFFF;
-=======
->>>>>>> master
 				mlx_put_pixel(f->bomma, hi, vi, f->clr);
 			}
 		}
@@ -139,10 +128,6 @@ void	giyi_julia(void *param)
 				f->im = f->ymin + vi / f->bomma->height * (f->ymax - f->ymin);
 				f->itr = julia_on(f->re, f->im, f->cre, f->cim);
 				f->clr = pixel_clr(f->itr);
-<<<<<<< HEAD
-				f->clr = (0x000000 - 0xFFFFFF) * f->itr / MI + 0X111111;
-=======
->>>>>>> master
 				mlx_put_pixel(f->bomma, hi, vi, f->clr);
 			}
 		}

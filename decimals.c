@@ -6,14 +6,11 @@
 /*   By: sprodatu <sprodatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/01 12:35:17 by sprodatu          #+#    #+#             */
-/*   Updated: 2024/05/03 04:09:16 by sprodatu         ###   ########.fr       */
+/*   Updated: 2024/04/19 13:55:10 by sprodatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./includes/fractol.h"
-
-// The pixel_clr function is used to determine the color of a pixel
-// based on the number of iterations it took to escape the Mandelbrot set.
 
 int	pixel_clr(int itr)
 {
