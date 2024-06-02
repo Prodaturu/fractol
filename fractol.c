@@ -6,11 +6,7 @@
 /*   By: sprodatu <sprodatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 08:10:52 by sprodatu          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/05/03 02:35:01 by sprodatu         ###   ########.fr       */
-=======
-/*   Updated: 2024/05/03 02:22:12 by sprodatu         ###   ########.fr       */
->>>>>>> master
+/*   Updated: 2024/06/02 14:46:49 by sprodatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,22 +66,15 @@ void	zooming(double x_diff, double y_diff, void *param)
  * 		sets the xmin, xmax, ymin, ymax, cre, cim values for the Julia fractal.
  * If arguments are un-valid,
  * 		it prints an error message and exits the program.
-<<<<<<< HEAD
-=======
  *
  * @param f A pointer to the t_fractal structure.
  * @param c An array of strings containing the command-line arguments.
  * @param mlx The MLX library instance.
  * @param argc The number of command-line arguments.
->>>>>>> master
  * 
  * @return void
  * 
  * @mlx_loop_hook: Register the Mandelbrot or Julia hook.
-<<<<<<< HEAD
- */
-
-=======
  * @write: Print an error message.
  * @exit: Exit the program.
  */
@@ -102,7 +91,6 @@ void	zooming(double x_diff, double y_diff, void *param)
  * 	- print error message and exit
 */
 
->>>>>>> master
 void	fract_modalu(t_fractal *f, char **argv, void *mlx, int argc)
 {
 	if (*argv[1] != 'm' && *argv[1] != 'j' && *argv[1] != 'b')
@@ -152,15 +140,11 @@ void	fract_modalu(t_fractal *f, char **argv, void *mlx, int argc)
  * @param mlx The mlx_t structure to initialize.
  * @param f The t_fractal structure containing the image.
  * @return 1 if successful, EXIT_FAILURE otherwise.
->>>>>>> master
- */
-
 int	img_modhalu(void *mlx, t_fractal *f)
 {
 	if (!mlx)
 		return (mlx_strerror(mlx_errno), EXIT_FAILURE);
 	f->bomma = mlx_new_image(mlx, WIDTH, HEIGHT);
-	if (!f->bomma || mlx_image_to_window(mlx, f->bomma, 0, 0) == -1)
 		return (mlx_close_window(mlx), mlx_strerror(mlx_errno), EXIT_FAILURE);
 	return (1);
 }
@@ -215,11 +199,6 @@ int	main(int argc, char **argv)
 }
 
 /**
-<<<<<<< HEAD
- * @logic: Detailed explanation:
-=======
- * @logic:
->>>>>>> master
  * 
  * if more than one argument is provided
  * 		Initialize the MLX library
@@ -227,11 +206,7 @@ int	main(int argc, char **argv)
  * 			-> parameters:- width(int), height(int), title(string), resize(bool)
  * 				-> It takes the width, height, and title of the window
  * 				-> It returns a pointer to the MLX library instance
- * 				-> The parameters are pre-defined in MLX library header file
- * 					-> WIDTH, HEIGHT, TITLE
- * 				-> The resize parameter is set to true
  * 					-> true: allows the window to be resized
- * 					-> false: does not allow the window to be resized
  * 					-> As we want the window to be resizable, we set it to true
  * 				-> mlx_init returns a pointer to the MLX library instance
  * 		Allocate memory for a t_fractal structure
