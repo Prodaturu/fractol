@@ -6,8 +6,7 @@
 #    By: sprodatu <sprodatu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/29 09:10:09 by sprodatu          #+#    #+#              #
-<<<<<<< HEAD
-#    Updated: 2024/04/19 09:03:02 by sprodatu         ###   ########.fr        #
+#    Updated: 2024/07/01 17:38:01 by sprodatu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,14 +46,6 @@
 
 # LDFLAGS := -lglfw -L"/Users/sprodatu/.brew/opt/glfw/lib/" -framework Cocoa -framework OpenGL -framework IOKit #-fsanitize=address -g 
 
-
-
-=======
-#    Updated: 2024/05/03 02:15:11 by sprodatu         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
->>>>>>> master
 CC := cc
 
 CFLAGS := -Wall -Wextra -Werror
@@ -104,10 +95,6 @@ libmlx:
 
 clean:
 	rm -rf $(OBJDIR)
-<<<<<<< HEAD
-	rm -rf MLX42
-=======
->>>>>>> master
 
 fclean: clean
 	rm -f $(TARGET)
